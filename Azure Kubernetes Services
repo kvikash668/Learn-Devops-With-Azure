@@ -27,7 +27,7 @@
 
 <img width="817" alt="image" src="https://github.com/piyushsachdeva/AzureDevOps-Zero-to-Hero/assets/40286378/f50887ea-28d0-40b3-968d-1e923f2177a4">
 
-
+##############################################################################################################
 ## Pre-requisites
 
 ### Infrastructure provisioning
@@ -41,11 +41,11 @@ The following resources will be provisioned:
 * An Image container registry
 * A SQL Server
 * A SQL Database
-
+###########################################################################################################################################################
 ``` bash
-
+#####################################################################################################################
 #!/bin/bash
-REGION="westus"
+REGION="Central India"
 RGP="day11-demo-rg"
 CLUSTER_NAME="day11-demo-cluster"
 ACR_NAME="day11demoacr"
@@ -69,7 +69,7 @@ az aks update -n $CLUSTER_NAME -g $RGP --attach-acr $ACR_NAME
 az sql server create -l $REGION -g $RGP -n $SQLSERVER -u sqladmin -p P2ssw0rd1234
 
 az sql db create -g $RGP -s $SQLSERVER -n $DB --service-objective S0
-
+##################################################################################################################################################
 ```
 
 ## Change the Firewall settings of the SQL server
